@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Flexbox - align-items</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="starwars.css">
+  <style>
+    .star-wars-card {
+      padding: 0.5rem;
+      border: 1px solid lightgray;
+      border-radius: 0.25rem;
+      box-shadow: 0 8px 8px -8px rgb(0 0 0 / 50%);
+    }
+
+    .star-wars-card img {
+      width: 100%;
+      background-color: lightgray;
+    }
+
+    #yoda-card {
+      display: flex;
+      flex-basis: calc(100% / 3);
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div id="yoda-card">
+    <div class="card-wrapper">
+      <div class="star-wars-card yoda">
+        <img src="images/yoda.jpg" alt="yoda">
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
